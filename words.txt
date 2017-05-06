@@ -1,0 +1,20 @@
+Skip to content
+Personal Open source Business Explore
+Sign upSign inPricingBlogSupport
+This repository
+Search
+ Watch 3  Star 68  Fork 13 airportyh/word-count
+ Code  Issues 0  Pull requests 0  Projects 0  Pulse  Graphs
+Branch: master Find file Copy pathword-count/2.imperative-w-functions.js
+5eb792f  on Nov 9, 2015
+@airportyh airportyh Rewrote all comments.
+1 contributor
+RawBlameHistory     
+64 lines (58 sloc)  2.15 KB
+/*
+This is just a refactored version of program 1. It simply extracts
+sections of the program into functions. The advantage is that the
+main body of this program is now only 5 lines, and can be understood
+at a high-level - sort of like an outline - without having to understand
+everything about how the program works.
+given an array of 10 objects containing the properties
