@@ -1,6 +1,15 @@
 *.classpath
 *.project
 *.prefs
+/.idea/
+/target/
+/bin/
+/node/
+/node_modules/
+/dist/
+*.iml
 *.class
-target/
-lib/
+/.settings/org.eclipse.core.resources.prefs
+/.settings/org.eclipse.m2e.core.prefs
+/sonarlint.json
+/.sonarlint/
