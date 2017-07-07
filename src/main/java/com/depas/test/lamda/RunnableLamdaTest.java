@@ -57,6 +57,7 @@ public class RunnableLamdaTest {
 		process(r2);  // prints "Hello World 2"
 		process(() -> System.out.println("Hello World Java 8 lambda inline"));  // prints with a lambda passed directly		
 		process(() -> doStuff());
+		process(RunnableLamdaTest::doStuff);
 								
 	}
 

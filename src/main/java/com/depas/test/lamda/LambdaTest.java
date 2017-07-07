@@ -39,7 +39,7 @@ public class LambdaTest {
 		System.out.println("\nFunction test");
 		Function func = t -> t;
 				
-		Function<String, Integer> stringLength = (s) -> s.length();		
+		Function<String, Integer> stringLength = (s) -> s.length();
 		System.out.println(stringLength.apply("Hello world"));
 		
 		// andThen
