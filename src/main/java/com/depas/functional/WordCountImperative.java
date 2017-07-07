@@ -124,7 +124,8 @@ public class WordCountImperative {
 	
 	
 	public static void main(String[] args) { 
-		String fileName = "c://source//workspace one//DePasTestProject//words.txt";
+//		String fileName = "c://source//workspace one//DePasTestProject//words.txt";
+		String fileName = "words.txt";
 		
 		String content = "";
 		try {

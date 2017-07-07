@@ -57,7 +57,8 @@ public class WordCountFunctional {
 	}
 
 	public static void main(String[] args) {
-		String fileName = "c://source//workspace one//DePasTestProject//words.txt";
+		//String fileName = "c://source//workspace one//DePasTestProject//words.txt";
+		String fileName = "words.txt";
 		// Files.lines doesn't close the buffer reader resource, this is lazy reading
 		try (Stream<String> wordsStream = Files.lines(Paths.get(fileName))) {
 
@@ -75,6 +76,8 @@ public class WordCountFunctional {
 			Stream<String> wordsStream = Files.readAllLines(Paths.get(fileName)).stream();	// this closes the resource, go for small files
 			getTopNWords(wordsStream,10).forEach(System.out::println);
 			// fancier printing
+			System.out.println("-----------------------------");
+			wordsStream = Files.readAllLines(Paths.get(fileName)).stream();
 			String words=getTopNWords(wordsStream,10).stream()
 				.map(e -> e.getKey() + "=" + e.getValue())
 				.collect(joining(", "));
