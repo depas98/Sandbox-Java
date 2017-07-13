@@ -36,7 +36,7 @@ public class UnitConversion {
         System.out.println("23 Celsisus is " + convertCtoF.applyAsDouble(23) + "F");
 
         DoubleUnaryOperator convertKmtoMi = curriedConverter(0.6214,0);
-        System.out.println("23 Celsisus is " + convertKmtoMi.applyAsDouble(1500) + " m");
+        System.out.println("1500 Km is " + convertKmtoMi.applyAsDouble(1500) + " m");
     }
 
 }

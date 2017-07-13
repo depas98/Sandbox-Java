@@ -29,7 +29,7 @@ public class WordCount {
     }
 
     public static long getWordCountFun(String searchWord, String path){
-        try ( BufferedReader bufferedReader = new BufferedReader(new FileReader(path))) {
+        try {
             return Files.lines(Paths.get(path))
                     .filter(l -> l.contains(searchWord))
                     .count();

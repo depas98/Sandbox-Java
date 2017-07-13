@@ -19,7 +19,7 @@ public class LambdaTest {
 		Supplier<Integer> intSupp5 = () -> {return new Integer(5);};				
 		Supplier<Map> hashMapSupp = () -> new HashMap<>();
 		// using a Method Reference
-		Supplier<Map> hashMapSuppMF = HashMap::new;	
+		Supplier<Map> hashMapSuppMF = HashMap::new;
 								
 		// *** consumer --> Consumer<T> cons =  t -> {};
 		System.out.println("\nConsumer test");
