@@ -1,5 +1,9 @@
 package com.depas.test;
 
+import org.apache.commons.math.util.MathUtils;
+
+import java.math.BigDecimal;
+
 public class MathTest {
 
 	public MathTest() {
@@ -83,6 +87,17 @@ public class MathTest {
 		final double qpInterval = .25;
 		long rows = (long) (100/ qpInterval);
 		System.out.println("division rows = " + rows);
+
+
+		System.out.println("test math round precision: " + MathUtils.round(100.3455,2));
+		System.out.println("test math round precision: " + MathUtils.round(100.3455,2, BigDecimal.ROUND_HALF_UP));
+
+		System.out.println("test roundHelper precision: " + roundHelper(100.3455,2));
+	}
+
+	private static double roundHelper(double value, double precision) {
+		double scale = Math.pow(10, precision);
+		return ((double)Math.round(value * scale)) / scale;
 	}
 
 }

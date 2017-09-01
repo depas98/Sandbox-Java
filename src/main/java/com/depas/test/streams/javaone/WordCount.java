@@ -50,7 +50,7 @@ public class WordCount {
 
         System.out.printf("The word %s occurred %d time\n", searchWord, count);
 
-        System.out.println("-----------");
+        System.out.println("----------------- The Fun Way ------------------------");
 
         // functional
         count = getWordCountFun(searchWord,path);

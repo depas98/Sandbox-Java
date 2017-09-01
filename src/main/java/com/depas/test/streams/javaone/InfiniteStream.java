@@ -21,8 +21,8 @@ public class InfiniteStream {
 
 		return sum;
     }
-
-    public static double computeSumOfSqrtOfPrimesFunc(int start, int count){
+    
+    public static double computeSumOfSqrtOfPrimesFun(int start, int count){
 		return Stream.iterate(start, e -> e + 1)
                 .filter(Prime::isPrimeFunctional)
                 .mapToDouble(Math::sqrt)
@@ -32,8 +32,8 @@ public class InfiniteStream {
 
     public static void main(String[] args) {
         System.out.println(computeSumOfSqrtOfPrimes(101, 51));
-        System.out.println("********************");
-        System.out.println(computeSumOfSqrtOfPrimesFunc(101, 51));
+        System.out.println("*********  The Fun Way ***********");
+        System.out.println(computeSumOfSqrtOfPrimesFun(101, 51));
     }
 
 }

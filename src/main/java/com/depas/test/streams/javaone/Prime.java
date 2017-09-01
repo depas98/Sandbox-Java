@@ -27,8 +27,13 @@ public class Prime {
     public static void main(String[] args) {
         for(int i=1; i<8 ; i++){
             System.out.printf("isPrimeImperative(%d)? %b\n", i, isPrimeImperative(i));
-            System.out.printf("isPrimeFun(%d)? %b\n", i, isPrimeFunctional(i));
         }
+
+        System.out.println("-------------- The Fun Way -----------------");
+
+        IntStream.range(1, 8)
+                .forEach(i -> System.out.printf("isPrimeFun(%d)? %b\n", i, isPrimeFunctional(i)));
+
     }
 
 }

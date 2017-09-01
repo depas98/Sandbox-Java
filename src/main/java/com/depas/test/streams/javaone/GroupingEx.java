@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 
 import static java.util.stream.Collectors.groupingBy;
 
@@ -29,12 +30,10 @@ public class GroupingEx {
         return byScores;
     }
 
-
-    public static Map<Integer, List<String>> groupByScoresFunc(Map<String, Integer> scores){
+    public static Map<Integer, List<String>> groupByScoresFun(Map<String, Integer> scores){
         return scores.keySet().stream()
                 .collect(groupingBy(scores::get));
     }
-
 
     public static void main(String[] args) {
         Map<String, Integer> scores = new HashMap<>();
@@ -48,9 +47,9 @@ public class GroupingEx {
 
         System.out.println(groupByScores(scores));
 
-        System.out.println("*********************");
+        System.out.println("********** The Fun Way ***********");
 
-        System.out.println(groupByScoresFunc(scores));
+        System.out.println(groupByScoresFun(scores));
 
     }
 
