@@ -30,6 +30,12 @@ public class GroupingEx {
         return byScores;
     }
 
+    public static Map<Integer, List<String>> groupByScoresFun2(Map<String, Integer> scores){
+        return scores.keySet()
+                    .stream()
+                    .collect(groupingBy(scores::get));
+    }
+
     public static Map<Integer, List<String>> groupByScoresFun(Map<String, Integer> scores){
         return scores.keySet().stream()
                 .collect(groupingBy(scores::get));
@@ -49,7 +55,7 @@ public class GroupingEx {
 
         System.out.println("********** The Fun Way ***********");
 
-        System.out.println(groupByScoresFun(scores));
+        System.out.println(groupByScoresFun2(scores));
 
     }
 

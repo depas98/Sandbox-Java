@@ -28,6 +28,19 @@ public class WordCount {
         return count;
     }
 
+    public static long getWordCountFun2(String searchWord, String path){
+        try {
+            return Files.lines(Paths.get(path))
+                    .filter(l -> l.contains(searchWord))
+                    .count();
+        }
+        catch (IOException ex) {
+            ex.printStackTrace();
+            return -1;
+        }
+
+    }
+
     public static long getWordCountFun(String searchWord, String path){
         try {
             return Files.lines(Paths.get(path))
@@ -53,7 +66,7 @@ public class WordCount {
         System.out.println("----------------- The Fun Way ------------------------");
 
         // functional
-        count = getWordCountFun(searchWord,path);
+        count = getWordCountFun2(searchWord,path);
         System.out.printf("The word %s occurred %d time\n", searchWord, count);
 
     }

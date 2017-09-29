@@ -18,6 +18,12 @@ public class Prime {
         return number > 1 && !divisible;
     }
 
+    public static boolean isPrimeFunctional2(final int number){
+        return number > 1 &&
+                    IntStream.range(2, number)
+                            .noneMatch(i -> number % i==0);
+    }
+
     public static boolean isPrimeFunctional(final int number) {
         return number > 1 &&
                 IntStream.range(2, number)

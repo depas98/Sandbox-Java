@@ -17,6 +17,12 @@ public class BeerEx {
         return beerList;
     }
 
+    public static List<String> getBeerFun2(final int numberOfBeers){
+        return IntStream.rangeClosed(1, numberOfBeers)
+                .mapToObj(n -> "I drank "+ n + " glasses of beer")
+                .collect(toList());
+    }
+
     public static List<String> getBeerFun(final int numberOfBeers) {
         return IntStream.rangeClosed(1, numberOfBeers)
                 .mapToObj(n -> "I drank " + n + " glasses of beer")
@@ -30,6 +36,6 @@ public class BeerEx {
 
         System.out.println("--------------- The Fun way -----------------------");
 
-        System.out.println(getBeerFun(5));
+        System.out.println(getBeerFun2(5));
     }
 }

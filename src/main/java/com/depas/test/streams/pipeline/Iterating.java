@@ -47,6 +47,18 @@ public class Iterating {
 	    return models;
     }
 
+    public static List<String> getModelsAfter2000UsingFun2(List<Car> cars){
+        if (cars==null){
+            return Collections.emptyList();
+        }
+
+        return cars.stream()
+                    .filter(c -> c.getYear() > 2000)
+                    .sorted(Comparator.comparingInt(Car::getYear))
+                    .map(Car::getModel)
+                    .collect(toList());
+    }
+
     public static List<String> getModelsAfter2000UsingFun(List<Car> cars) {
         if (cars==null){
             return new ArrayList<String>();
