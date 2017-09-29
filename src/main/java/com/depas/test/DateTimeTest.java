@@ -176,7 +176,7 @@ public class DateTimeTest {
 
 
 		long currTime = System.currentTimeMillis();
-//		currTime = 1466460346000L;
+		currTime = 1500454476780L;
 		System.out.println("current date time is " + currTime);
 		fmtDateTime = fmt2.print(currTime);
 		System.out.println("current date time is " + fmtDateTime);
