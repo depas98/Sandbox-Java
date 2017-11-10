@@ -13,8 +13,8 @@ import java.util.Set;
 import java.util.function.Function;
 
 import static java.util.Comparator.comparingDouble;
-import static java.util.stream.Collectors.*;
 import static java.util.Comparator.comparingInt;
+import static java.util.stream.Collectors.*;
 
 @SuppressWarnings("Duplicates")
 public class BeerGrouping {

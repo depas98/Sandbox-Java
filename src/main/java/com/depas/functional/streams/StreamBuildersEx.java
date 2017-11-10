@@ -51,9 +51,15 @@ public class StreamBuildersEx {
         // Special kinds of streams for  primitive data types int, long and double: IntStream, LongStream and DoubleStream.
         // IntStreams can replace the regular for-loop utilizing IntStream.range():
 
-//        IntStream.range(1, 4)
-//                .forEach(System.out::println);
-//
+        IntStream.range(1, 4)
+                .forEach(System.out::println);
+
+        System.out.println("reverse IntStream");
+        int maxVal = 4;
+        IntStream.range(1, maxVal)
+                .map(n -> maxVal - n)
+                .forEach(System.out::println);
+
 //        IntStream.rangeClosed(1, 4)
 //                .forEach(System.out::println);
 
