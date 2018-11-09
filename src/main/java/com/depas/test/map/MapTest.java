@@ -1,4 +1,4 @@
-package com.test.map;
+package com.depas.test.map;
 
 import java.util.Arrays;
 import java.util.HashMap;

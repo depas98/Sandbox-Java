@@ -1,4 +1,4 @@
-package com.test.java8interface;
+package com.depas.test.java8interface;
 
 public class StaticInterfaceTestImpl implements StaticInterfaceTest {
 
@@ -8,7 +8,7 @@ public class StaticInterfaceTestImpl implements StaticInterfaceTest {
 		if (StaticInterfaceTest.isValidIP(ip)){
 			return ip;
 		}
-		
+
 		return null;
 	}
 

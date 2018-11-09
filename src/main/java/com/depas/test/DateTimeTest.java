@@ -6,7 +6,6 @@ import java.util.TimeZone;
 
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeConstants;
-import org.joda.time.DateTimeUtils;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
@@ -176,7 +175,8 @@ public class DateTimeTest {
 
 
 		long currTime = System.currentTimeMillis();
-		currTime = 1509536760947L;
+        System.out.println("current date time is " + currTime);
+		currTime = 1541627280000L;
 		System.out.println("current date time is " + currTime);
 		fmtDateTime = fmt2.print(currTime);
 		System.out.println("current date time is " + fmtDateTime);

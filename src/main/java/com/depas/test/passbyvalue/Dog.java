@@ -1,4 +1,4 @@
-package com.test.passbyvalue;
+package com.depas.test.passbyvalue;
 
 public class Dog {
 
@@ -7,7 +7,7 @@ public class Dog {
 	public Dog(String name){
 		this.name=name;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
@@ -15,6 +15,6 @@ public class Dog {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
+
 }
